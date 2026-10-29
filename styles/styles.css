@@ -1,0 +1,278 @@
+:root {
+  --medium-color: #222222;
+  --title-color: #000000;
+  --text-color: #555555;
+  --placeholder-color: #999999;
+  --botton-color: #402f2c;
+  --text-botton: #ffffff;
+  --hero-background-color: #f9f6f5;
+  --hover-focus-color: #af7f05;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+/* HEADER */
+
+header {
+  position: absolute;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--medium-color);
+  font-style: italic;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  transition: color 300ms linear;
+}
+
+.logo:after {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: var(--medium-color);
+  transition: background-color 300ms linear;
+}
+
+.logo:hover,
+.logo:focus,
+nav a:hover,
+nav a:focus {
+  color: var(--hover-focus-color);
+  outline: none;
+}
+
+.logo:hover:after,
+.logo:focus:after {
+  background-color: var(--hover-focus-color);
+}
+
+nav ul {
+  display: flex;
+  gap: 40px;
+}
+
+nav a {
+  padding: 40px 0;
+  display: block;
+  color: var(--medium-color);
+  font-size: 16px;
+  line-height: 1.25;
+  transition: color 300ms linear;
+}
+
+.external-links {
+  display: flex;
+  gap: 24px;
+}
+
+.external-links li a {
+  padding: 40px 0;
+  display: block;
+}
+
+.external-links li svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--medium-color);
+  transition: fill 300ms linear;
+}
+
+.external-links li a:hover,
+.external-links li a:focus {
+  outline: none;
+}
+
+.external-links li a:hover svg,
+.external-links li a:focus svg {
+  fill: var(--hover-focus-color);
+}
+
+/* HERO */
+
+.hero {
+  padding-top: 138px;
+  background-color: var(--hero-background-color);
+}
+
+.hero .container {
+  position: relative;
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 796px 609px;
+  height: 609px;
+}
+
+.hero-container h1 {
+  padding-top: 40px;
+  max-width: 641px;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1.25;
+  color: var(--title-color);
+}
+
+.hero-container p {
+  max-width: 516px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+.hero-container form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 326px;
+  height: 48px;
+  margin-bottom: 60px;
+  background-color: var(--text-botton);
+}
+
+.hero-container form input {
+  width: 276px;
+  padding: 11px 13px;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  background-color: var(--text-botton);
+  font-size: 14px;
+  line-height: 1.43;
+  transition: border-color 300ms linear;
+}
+
+.hero-container form input:hover,
+.hero-container form input:focus {
+  outline: none;
+  border: var(--botton-color) solid 3px;
+  border-radius: 10px;
+}
+
+.hero-container form button {
+  width: 32px;
+  height: 32px;
+  margin: 8px;
+  border: none;
+  background-color: var(--botton-color);
+  transition:
+    background-color 300ms linear,
+    border-radius 300ms linear;
+  cursor: pointer;
+}
+
+.hero-container form button:hover,
+.hero-container form button:focus {
+  outline: none;
+  background-color: var(--hover-focus-color);
+  border-radius: 7px;
+}
+
+.hero-container form button svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--text-botton);
+}
+
+.hero-container a {
+  display: inline-block;
+  width: 148px;
+  height: 56px;
+  padding: 16px 32px;
+  background-color: var(--botton-color);
+  color: var(--text-botton);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  transition:
+    background-color 300ms linear,
+    border-radius 300ms linear;
+}
+
+.hero-container a:hover,
+.hero-container a:focus {
+  outline: none;
+  background-color: var(--hover-focus-color);
+  border-radius: 10px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 0;
+  right: 653px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 145px;
+  height: 138px;
+  background-color: var(--hero-background-color);
+}
+
+.slider-controls li {
+  width: 40px;
+  height: 40px;
+}
+
+.slider-controls li button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: var(--hero-background-color);
+  cursor: pointer;
+}
+
+.slider-controls li button svg {
+  width: 25px;
+  height: 25px;
+  fill: var(--medium-color);
+  transition: fill 300ms linear;
+}
+
+.slider-controls li button:hover,
+.slider-controls li button:focus {
+  outline: none;
+}
+
+.slider-controls li button:hover svg,
+.slider-controls li button:focus svg {
+  fill: var(--hover-focus-color);
+}
