@@ -43,7 +43,7 @@ header {
 
 .container {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -133,7 +133,6 @@ nav a {
 }
 
 .hero .container {
-  padding-bottom: 50px;
   background-image: url(../images/background.png);
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -265,7 +264,7 @@ nav a {
   fill: var(--text-botton);
 }
 .hero-container a {
-  display: inline-block;
+  display: block;
   width: 148px;
   height: 56px;
   padding: 16px 32px;
@@ -288,19 +287,15 @@ nav a {
 
 .slider-controls {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
-
-.slider-controls li {
-  width: 40px;
-  height: 40px;
+  margin-top: -28px;
+  margin-left: 561px;
 }
 
 .slider-controls li button {
-  width: 64px;
-  height: 80px;
+  display: block;
+  width: 72px;
+  height: 138px;
+  padding: 0;
   border: none;
   background-color: var(--hero-background-color);
   cursor: pointer;
@@ -311,7 +306,6 @@ nav a {
   height: 25px;
   fill: var(--medium-color);
   transition: fill 300ms linear;
-  z-index: 1;
 }
 
 .slider-controls li button:hover,
