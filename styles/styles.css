@@ -135,7 +135,7 @@ nav a {
 .hero .container {
   background-image: url(../images/background.png);
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: calc(100% + 40px) bottom;
   background-size: 796px 609px;
 }
 
@@ -285,10 +285,15 @@ nav a {
   border-radius: 10px;
 }
 
+.hero-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .slider-controls {
   display: flex;
   margin-top: -28px;
-  margin-left: 561px;
+  align-self: center;
 }
 
 .slider-controls li button {
