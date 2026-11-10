@@ -44,7 +44,7 @@ header {
 .container {
   width: 100%;
   max-width: 1440px;
-  padding: 0 20px;
+  padding: 0 100px;
   margin: 0 auto;
 }
 
@@ -132,7 +132,7 @@ nav a {
   background-color: var(--hero-background-color);
   background-image: url(../images/background.png);
   background-repeat: no-repeat;
-  background-position: calc(50% + 405px) bottom;
+  background-position: calc(50% + 325px) bottom;
   background-size: 796px 609px;
 }
 
